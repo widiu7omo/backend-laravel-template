@@ -46,10 +46,6 @@ class RoleResource extends Resource
                 TextColumn::make('name'),
                 TextColumn::make('guard_name'),
             ])
-            ->filters([
-                Tables\Filters\Filter::make('name')
-                    ->query(fn (Builder $query): Builder => $query->whereNotNull('name')),
-            ])
             ->actions([
                 Tables\Actions\EditAction::make(),
             ])
