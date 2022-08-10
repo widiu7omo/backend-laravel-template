@@ -37,3 +37,16 @@ public string $site_name;
 ```php
 php artisan make:filament-settings-page ManageGeneral GeneralSettings
 ```
+- Custom theme, edit file inside resource/css/filament.css make sure env variable TAILWIND_CONFIG is same with css name
+- Create Custom component livewire as layout -> wrapper of fields/ form
+create layout with this command 
+```php 
+php artisan make:form-layout
+```
+it will create two file inside `app/Forms/Components` and `resources/forms`
+you can edit view from resource and also you can pass livewire component with tag `livewire:component-name`
+- Create Livewire Component
+
+```php
+php artisan make:livewire
+```

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Setting;
 
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -41,6 +41,6 @@ class FormNotificationTest extends Component implements HasForms
 
     public function render()
     {
-        return view('livewire.form-notification-test');
+        return view('livewire.setting.form-notification-test');
     }
 }

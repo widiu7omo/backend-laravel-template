@@ -1,4 +1,4 @@
 <div {{ $attributes }}>
     {{ $getChildComponentContainer() }}
-    <livewire:form-notification-test/>
+    <livewire:setting.form-notification-test/>
 </div>
