@@ -25,4 +25,10 @@ class EditUser extends EditRecord
             Actions\DeleteAction::make(),
         ];
     }
+
+    protected function afterCreate()
+    {
+        activity("Updated User")->log($this->record . " by " . auth()->user()->name);
+
+    }
 }
