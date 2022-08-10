@@ -5,7 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^8.0.2",
+        "php": "^8.1.0",
         "doctrine/dbal": "^3.4",
         "filament/filament": "v2.15.13",
         "filament/forms": "^2.15",
@@ -14,6 +14,7 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "ramnzys/filament-email-log": "^0.2.2",
         "spatie/laravel-permission": "^5.5"
     },
     "require-dev": {
