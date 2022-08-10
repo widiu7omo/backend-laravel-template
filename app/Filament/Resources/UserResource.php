@@ -9,6 +9,8 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use FilamentPro\FilamentBan\Actions\Ban;
+use FilamentPro\FilamentBan\Actions\Unban;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -69,13 +71,17 @@ class UserResource extends Resource
             ])
             ->filters([
                 Tables\Filters\Filter::make('Only Verified Email')
-                    ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNotNull('email_verified_at')),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                //TODO: add banable into each row
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
+            ])->prependBulkActions([
+                Ban::make('ban'),
+                Unban::make('unban'),
             ]);
     }
 

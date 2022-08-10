@@ -3,6 +3,8 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Cog\Contracts\Ban\Bannable as BannableContract;
+use Cog\Laravel\Ban\Traits\Bannable;
 use Filament\Models\Contracts\FilamentUser;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -15,10 +17,11 @@ use Spatie\Permission\Traits\HasRoles;
 /**
  * @property $email
  */
-class User extends Authenticatable implements FilamentUser
+class User extends Authenticatable implements FilamentUser, BannableContract
 {
     use HasApiTokens, HasFactory, Notifiable;
     use HasRoles;
+    use Bannable;
 
     /**
      * The attributes that are mass assignable.
