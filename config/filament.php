@@ -1,5 +1,7 @@
 <?php
 
+use Filament\AvatarProviders\UiAvatarsProvider;
+use Filament\Http\Livewire\Auth\Login;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Http\Middleware\MirrorConfigToSubpackages;
@@ -72,7 +74,7 @@ return [
     |
     */
 
-    'brand' => env('APP_NAME'),
+    'brand' => env('APP_NAME', "Unknown Name"),
 
     /*
     |--------------------------------------------------------------------------
@@ -87,7 +89,7 @@ return [
     'auth' => [
         'guard' => env('FILAMENT_AUTH_GUARD', 'web'),
         'pages' => [
-            'login' => \Filament\Http\Livewire\Auth\Login::class,
+            'login' => Login::class,
         ],
     ],
 
@@ -235,7 +237,7 @@ return [
     |
     */
 
-    'default_avatar_provider' => \Filament\AvatarProviders\UiAvatarsProvider::class,
+    'default_avatar_provider' => UiAvatarsProvider::class,
 
     /*
     |--------------------------------------------------------------------------

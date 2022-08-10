@@ -1,4 +1,10 @@
-import './bootstrap';
-import {livewire_hot_reload} from 'virtual:livewire-hot-reload'
+import Alpine from 'alpinejs'
+import FormsAlpinePlugin from '../../vendor/filament/forms/dist/module.esm'
+import NotificationsAlpinePlugin from '../../vendor/filament/notifications/dist/module.esm'
 
-livewire_hot_reload();
+Alpine.plugin(FormsAlpinePlugin)
+Alpine.plugin(NotificationsAlpinePlugin)
+
+window.Alpine = Alpine
+
+Alpine.start()

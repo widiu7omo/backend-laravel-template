@@ -1,15 +1,61 @@
-import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
-import livewire from "@defstudio/vite-livewire-plugin";
+import laravel from "laravel-vite-plugin";
+import { defineConfig } from "vite";
+
+let inputs = [];
+
+if (process.env.TAILWIND_CONFIG) {
+    inputs = [`resources/css/${process.env.TAILWIND_CONFIG}.css`];
+} else {
+    inputs = [
+        "resources/css/app.css",
+        "resources/js/app.js",
+        "resources/js/push.js",
+    ];
+}
 
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
+            input: inputs,
             refresh: true,
         }),
-        livewire({  // <-- add livewire plugin
-            refresh: ['resources/css/app.css'],  // <-- will refresh css (tailwind ) as well
-        }),
     ],
+    css: {
+        postcss: {
+            plugins: [
+                require("tailwindcss/nesting"),
+                require("tailwindcss")({
+                    config: process.env?.TAILWIND_CONFIG
+                        ? `tailwind-${process.env.TAILWIND_CONFIG}.config.js`
+                        : "./tailwind.config.js",
+                }),
+                require("autoprefixer"),
+            ],
+        },
+    },
+    build: {
+        outDir: process.env?.TAILWIND_CONFIG
+            ? `./public/build/${process.env.TAILWIND_CONFIG}`
+            : "./public/build/frontend",
+    },
 });
+
+
+// import { defineConfig } from 'vite'
+// import laravel, { refreshPaths } from 'laravel-vite-plugin'
+//
+// export default defineConfig({
+//     plugins: [
+//         laravel({
+//             input: [
+//                 'resources/css/app.css',
+//                 'resources/js/app.js',
+//             ],
+//             refresh: [
+//                 ...refreshPaths,
+//                 'app/Http/Livewire/**',
+//                 'app/Forms/Components/**',
+//             ],
+//         }),
+//     ],
+// })
