@@ -9,4 +9,9 @@ class CreateUser extends CreateRecord
 {
     protected static string $resource = UserResource::class;
 
+    //example log
+//    protected function afterCreate(): void
+//    {
+//        activity("Created User")->log($this->record . " by " . auth()->user()->name);
+//    }
 }
