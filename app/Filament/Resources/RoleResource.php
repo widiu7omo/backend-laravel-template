@@ -4,15 +4,12 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\RoleResource\Pages;
 use App\Filament\Resources\RoleResource\RelationManagers;
-use App\Models\User;
-use Filament\Forms;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Permission\Models\Role;
 
@@ -20,16 +17,20 @@ class RoleResource extends Resource
 {
     protected static ?string $model = Role::class;
     protected static ?string $recordTitleAttribute = 'Role';
+    protected static ?string $navigationLabel = "Roles & Permissions";
     protected static ?string $navigationIcon = 'heroicon-o-user-group';
     protected static ?string $navigationGroup = 'User Management';
+
     public static function getGloballySearchableAttributes(): array
     {
         return ['name', 'guard_name'];
     }
+
     public static function getGlobalSearchResultTitle(Model $record): string
     {
         return $record->name;
     }
+
     public static function form(Form $form): Form
     {
         return $form
