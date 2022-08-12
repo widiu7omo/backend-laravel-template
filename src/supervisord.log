@@ -1,0 +1,28 @@
+2022-08-12 23:35:29,910 INFO Included extra file "/etc/supervisord.d/laravel-scheduler.conf" during parsing
+2022-08-12 23:35:29,941 INFO Included extra file "/etc/supervisord.d/laravel-worker.conf" during parsing
+2022-08-12 23:35:29,971 INFO Included extra file "/etc/supervisord.d/php-fpm.conf" during parsing
+2022-08-12 23:35:29,998 INFO RPC interface 'supervisor' initialized
+2022-08-12 23:35:30,013 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2022-08-12 23:35:30,133 INFO supervisord started with pid 1
+2022-08-12 23:35:31,197 INFO spawned: 'laravel-scheduler_00' with pid 6
+2022-08-12 23:35:31,315 INFO spawned: 'laravel-worker_00' with pid 10
+2022-08-12 23:35:31,360 INFO spawned: 'laravel-worker_01' with pid 11
+2022-08-12 23:35:31,478 INFO spawned: 'laravel-worker_02' with pid 12
+2022-08-12 23:35:31,546 INFO spawned: 'laravel-worker_03' with pid 13
+2022-08-12 23:35:31,640 INFO spawned: 'laravel-worker_04' with pid 14
+2022-08-12 23:35:31,809 INFO spawned: 'laravel-worker_05' with pid 15
+2022-08-12 23:35:31,972 INFO spawned: 'laravel-worker_06' with pid 16
+2022-08-12 23:35:32,087 INFO spawned: 'laravel-worker_07' with pid 17
+2022-08-12 23:35:32,170 INFO spawned: 'php-fpm_00' with pid 18
+2022-08-12 23:35:32,800 INFO success: laravel-scheduler_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-08-12 23:35:32,902 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-08-12 23:35:32,990 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-08-12 23:35:32,996 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-08-12 23:35:33,001 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-08-12 23:35:33,078 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-08-12 23:35:33,130 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-08-12 23:35:33,159 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-08-12 23:35:33,223 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-08-12 23:35:33,257 INFO success: php-fpm_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-08-12 23:36:09,548 INFO reaped unknown pid 8 (exit status 0)
+2022-08-12 23:36:37,069 INFO reaped unknown pid 76 (exit status 0)

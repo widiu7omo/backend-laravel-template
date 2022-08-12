@@ -38,19 +38,21 @@ RUN php -i | grep "redis"
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+#=============ONLY FOR PRODUCTION ENV==========================
 # Copy project ke dalam container
-COPY ./src /var/www/
-RUN rm -rf /var/www/vendor
-RUN rm -rf /var/www/node_modules
+#COPY ./src /var/www/
+#RUN rm -rf /var/www/vendor
+#RUN rm -rf /var/www/node_modules
+# Install dependency
+#RUN composer install
+#RUN npm install && npm run build
+#=============ONLY FOR PRODUCTION ENV==========================
 # COPY ./storage/ /var/www/storage_backup/
 # Copy directory project permission ke container
 # COPY --chown=www-data:www-data . /var/www/
 RUN chown -R www-data:www-data /var/www
 RUN chown -R www-data:www-data /var/log/supervisor
 
-# Install dependency
-RUN composer install
-RUN npm install && npm run build
 # Expose port 9000
 EXPOSE 9000
 

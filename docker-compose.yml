@@ -21,6 +21,8 @@ services:
     env_file: src/.env
     volumes:
       - ./storage:/var/www/storage
+      #  mount source code only for development
+      - ./src:/var/www/
     depends_on:
       - cache
     networks:
