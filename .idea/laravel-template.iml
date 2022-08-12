@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="Tests\" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/filament/spatie-laravel-settings-plugin" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-settings" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/data-transfer-object" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/temporary-directory" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ramnzys/filament-email-log" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-activitylog" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/z3d0x/filament-logger" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/cybercog/laravel-ban" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ttungbmt/filament-ban" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/shuvroroy/filament-spatie-laravel-backup" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/calebporzio/sushi" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/db-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-backup" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-signal-aware-command" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/invade" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bezhansalleh/filament-shield" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/shuvroroy/filament-spatie-laravel-health" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/regex" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-health" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/enum" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/filament/spatie-laravel-media-library-plugin" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/myclabs/php-enum" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/maennchen/zipstream-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/league/glide" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/image-optimizer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-medialibrary" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/image" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/intervention/image" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/filament/spatie-laravel-tags-plugin" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-tags" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/eloquent-sortable" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-translatable" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/saade/filament-fullcalendar" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

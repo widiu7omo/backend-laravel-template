@@ -1,0 +1,55 @@
+version: '3'
+services:
+  database:
+    hostname: 'database_host'
+    image: mariadb:10.8.3
+    container_name: database
+    environment:
+      - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=true
+    depends_on:
+      - cache
+      - app
+    volumes:
+      - ./storage/mysql:/var/lib/mysql
+    networks:
+      - laravel-prod
+  app:
+    image: widiu7omo/laravel-backend-template-app:latest
+    container_name: app
+    restart: unless-stopped
+    tty: true
+    env_file: src/.env
+    volumes:
+      - ./storage:/var/www/storage
+    depends_on:
+      - cache
+    networks:
+      - laravel-prod
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      
+  web_server:
+    image: widiu7omo/laravel-backend-template-server
+    container_name: web_server
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8002:80"
+    depends_on:
+      - app
+    networks:
+      - laravel-prod
+
+  cache:
+    image: redis:alpine
+    container_name: cache
+    restart: unless-stopped
+    volumes:
+      - ./storage/redis/data:/data
+    networks:
+      - laravel-prod
+
+#Docker Networks
+networks:
+  laravel-prod:
+    driver: bridge

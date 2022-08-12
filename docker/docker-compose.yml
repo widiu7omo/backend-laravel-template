@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: ext4/laravel-prod-ilife-app:latest
+    image: widiu7omo/laravel-backend-template-app:latest
     container_name: app
     restart: unless-stopped
     tty: true
@@ -28,7 +28,7 @@ services:
   #     - APP_ROOT="/var/www"
 
   web_server:
-    image: ext4/ilife-web-server:latest
+    image: widiu7omo/laravel-backend-template-server
     container_name: web_server
     restart: unless-stopped
     tty: true
