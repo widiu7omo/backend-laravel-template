@@ -6,6 +6,9 @@
     - Create Page List
 
 ### Spatie Laravel Role - Permission
+    - Laravel Filament Shield
+      `php artisan shield:super-admin` to define super admin
+      ` php artisan shield:generate` always generate everytime you create new page or component
 
 ### Spatie Setting & Filament Setting Plugin
 
