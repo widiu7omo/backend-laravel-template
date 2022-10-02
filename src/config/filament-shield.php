@@ -6,6 +6,7 @@ return [
         'navigation_sort' => -1,
         'navigation_badge' => true,
         'navigation_group' => true,
+        'is_globally_searchable' => false,
     ],
 
     'auth_provider_model' => [
@@ -14,11 +15,13 @@ return [
 
     'super_admin' => [
         'enabled' => true,
-        'name'  => 'super_admin',
+        'name' => 'super_admin',
+        'define_via_gate' => false,
+        'intercept_gate' => 'before', // after
     ],
 
     'filament_user' => [
-        'enabled' => true,
+        'enabled' => false,
         'name' => 'filament_user',
     ],
 
@@ -61,13 +64,13 @@ return [
         ],
 
         'widgets' => [
-            'AccountWidget','FilamentInfoWidget',
+            'AccountWidget', 'FilamentInfoWidget',
         ],
 
         'resources' => [],
     ],
 
     'register_role_policy' => [
-        'enabled' => false,
+        'enabled' => true,
     ],
 ];

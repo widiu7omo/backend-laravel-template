@@ -3,6 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
+use Ramnzys\FilamentEmailLog\Models\Email;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class EmailPolicy
@@ -24,9 +25,10 @@ class EmailPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
+     * @param  \Ramnzys\FilamentEmailLog\Models\Email  $email
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user)
+    public function view(User $user, Email $email)
     {
         return $user->can('view_email');
     }
@@ -46,9 +48,10 @@ class EmailPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
+     * @param  \Ramnzys\FilamentEmailLog\Models\Email  $email
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user)
+    public function update(User $user, Email $email)
     {
         return $user->can('update_email');
     }
@@ -57,9 +60,10 @@ class EmailPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
+     * @param  \Ramnzys\FilamentEmailLog\Models\Email  $email
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user)
+    public function delete(User $user, Email $email)
     {
         return $user->can('delete_email');
     }
@@ -79,9 +83,10 @@ class EmailPolicy
      * Determine whether the user can permanently delete.
      *
      * @param  \App\Models\User  $user
+     * @param  \Ramnzys\FilamentEmailLog\Models\Email  $email
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user)
+    public function forceDelete(User $user, Email $email)
     {
         return $user->can('force_delete_email');
     }
@@ -101,9 +106,10 @@ class EmailPolicy
      * Determine whether the user can restore.
      *
      * @param  \App\Models\User  $user
+     * @param  \Ramnzys\FilamentEmailLog\Models\Email  $email
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user)
+    public function restore(User $user, Email $email)
     {
         return $user->can('restore_email');
     }
@@ -123,9 +129,10 @@ class EmailPolicy
      * Determine whether the user can bulk restore.
      *
      * @param  \App\Models\User  $user
+     * @param  \Ramnzys\FilamentEmailLog\Models\Email  $email
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function replicate(User $user)
+    public function replicate(User $user, Email $email)
     {
         return $user->can('replicate_email');
     }

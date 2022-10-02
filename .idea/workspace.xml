@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3528938d-2e73-48b9-abd4-9baa10ae959e" name="Changes" comment="Add tags" />
+    <list default="true" id="3528938d-2e73-48b9-abd4-9baa10ae959e" name="Changes" comment="Add tags">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4c8d56b5-c134-40e6-804e-e0ed1712cf7c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4c8d56b5-c134-40e6-804e-e0ed1712cf7c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Policies/ActivityPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Policies/ActivityPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Policies/EmailPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Policies/EmailPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Policies/RolePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Policies/RolePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Policies/UserPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/filament-shield.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/filament-shield.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/filament.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/filament.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supervisord.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/supervisord.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supervisord.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/aria_log.00000001" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/aria_log.00000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/aria_log_control" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/aria_log_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/ddl_recovery.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/ibtmp1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mysql/laravel/activity_log.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mysql/laravel/activity_log.ibd" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +35,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,9 +47,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -216,7 +238,7 @@
     "last_opened_file_path": "/Volumes/Data/playground/laravel/laravel-template",
     "nodejs_package_manager_path": "npm",
     "php.override.implement.member.chooser.php.doc": "NONE",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
     "ts.external.directory.path": "/Users/danarwidi/Library/Application Support/JetBrains/Toolbox/apps/PhpStorm/ch-0/222.3345.135/PhpStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -256,6 +278,7 @@
       <workItem from="1659931450563" duration="13158000" />
       <workItem from="1660044461820" duration="15057000" />
       <workItem from="1660115144896" duration="12215000" />
+      <workItem from="1664635296663" duration="2136000" />
     </task>
     <task id="LOCAL-00001" summary="Role and permission">
       <created>1659957507234</created>

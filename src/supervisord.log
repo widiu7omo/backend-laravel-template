@@ -26,3 +26,18 @@
 2022-08-12 23:35:33,257 INFO success: php-fpm_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2022-08-12 23:36:09,548 INFO reaped unknown pid 8 (exit status 0)
 2022-08-12 23:36:37,069 INFO reaped unknown pid 76 (exit status 0)
+2022-08-12 23:37:35,450 INFO reaped unknown pid 85 (exit status 0)
+2022-08-12 23:37:48,342 WARN received SIGQUIT indicating exit request
+2022-08-12 23:37:48,345 INFO waiting for laravel-scheduler_00, laravel-worker_00, laravel-worker_01, laravel-worker_02, laravel-worker_03, laravel-worker_04, laravel-worker_05, laravel-worker_06, laravel-worker_07, php-fpm_00 to die
+2022-08-12 23:37:49,366 INFO stopped: php-fpm_00 (exit status 0)
+2022-08-12 23:37:50,469 INFO stopped: laravel-worker_03 (exit status 0)
+2022-08-12 23:37:50,472 INFO stopped: laravel-worker_05 (exit status 0)
+2022-08-12 23:37:50,474 INFO stopped: laravel-worker_06 (exit status 0)
+2022-08-12 23:37:50,475 INFO stopped: laravel-worker_07 (exit status 0)
+2022-08-12 23:37:51,483 INFO waiting for laravel-scheduler_00, laravel-worker_00, laravel-worker_01, laravel-worker_02, laravel-worker_04 to die
+2022-08-12 23:37:54,549 INFO stopped: laravel-worker_00 (exit status 0)
+2022-08-12 23:37:54,553 INFO stopped: laravel-worker_01 (exit status 0)
+2022-08-12 23:37:54,554 INFO stopped: laravel-worker_02 (exit status 0)
+2022-08-12 23:37:54,556 INFO stopped: laravel-worker_04 (exit status 0)
+2022-08-12 23:37:54,558 INFO waiting for laravel-scheduler_00 to die
+2022-08-12 23:37:55,563 INFO stopped: laravel-scheduler_00 (terminated by SIGTERM)

@@ -3,6 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
+use Spatie\Activitylog\Models\Activity;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class ActivityPolicy
@@ -24,9 +25,10 @@ class ActivityPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
+     * @param  \Spatie\Activitylog\Models\Activity  $activity
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user)
+    public function view(User $user, Activity $activity)
     {
         return $user->can('view_activity');
     }
@@ -46,9 +48,10 @@ class ActivityPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
+     * @param  \Spatie\Activitylog\Models\Activity  $activity
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user)
+    public function update(User $user, Activity $activity)
     {
         return $user->can('update_activity');
     }
@@ -57,9 +60,10 @@ class ActivityPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
+     * @param  \Spatie\Activitylog\Models\Activity  $activity
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user)
+    public function delete(User $user, Activity $activity)
     {
         return $user->can('delete_activity');
     }
@@ -79,9 +83,10 @@ class ActivityPolicy
      * Determine whether the user can permanently delete.
      *
      * @param  \App\Models\User  $user
+     * @param  \Spatie\Activitylog\Models\Activity  $activity
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user)
+    public function forceDelete(User $user, Activity $activity)
     {
         return $user->can('force_delete_activity');
     }
@@ -101,9 +106,10 @@ class ActivityPolicy
      * Determine whether the user can restore.
      *
      * @param  \App\Models\User  $user
+     * @param  \Spatie\Activitylog\Models\Activity  $activity
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user)
+    public function restore(User $user, Activity $activity)
     {
         return $user->can('restore_activity');
     }
@@ -123,9 +129,10 @@ class ActivityPolicy
      * Determine whether the user can bulk restore.
      *
      * @param  \App\Models\User  $user
+     * @param  \Spatie\Activitylog\Models\Activity  $activity
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function replicate(User $user)
+    public function replicate(User $user, Activity $activity)
     {
         return $user->can('replicate_activity');
     }
