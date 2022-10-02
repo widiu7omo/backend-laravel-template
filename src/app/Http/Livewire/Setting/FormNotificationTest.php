@@ -6,18 +6,25 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
+use Filament\Notifications\Notification;
 use Livewire\Component;
 
 class FormNotificationTest extends Component implements HasForms
 {
     use InteractsWithForms;
 
-    public string $notificationSent = "belum";
+    public string $title = "";
+    public string $body = "";
 
     public function sendNotification()
     {
-        $this->notificationSent = "sudah";
+        return Notification::make("test_notification")
+            ->icon('heroicon-o-shopping-bag')
+            ->title($this->title)
+            ->body($this->body)
+            ->success()->sendToDatabase(auth()->user());
     }
+
 
     public function mount()
     {
