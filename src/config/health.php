@@ -35,7 +35,7 @@ return [
         /*
          * Notifications will only get sent if this option is set to `true`.
          */
-        'enabled' => true,
+        'enabled' => env('HEALTH_NOTIFICATION', 'false'),
 
         'notifications' => [
             Spatie\Health\Notifications\CheckFailedNotification::class => ['mail'],
@@ -57,7 +57,7 @@ return [
         'throttle_notifications_for_minutes' => 60,
 
         'mail' => [
-            'to' => 'your@example.com',
+            'to' => env("HEALTH_NOTIFICATION_MAIL_TO", "hello@example.com"),
 
             'from' => [
                 'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),

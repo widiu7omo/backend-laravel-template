@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3528938d-2e73-48b9-abd4-9baa10ae959e" name="Changes" comment="Add health check">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4c8d56b5-c134-40e6-804e-e0ed1712cf7c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4c8d56b5-c134-40e6-804e-e0ed1712cf7c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Livewire/Setting/FormNotificationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Livewire/Setting/FormNotificationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/filament.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/filament.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/views/livewire/setting/form-notification-test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/livewire/setting/form-notification-test.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="3528938d-2e73-48b9-abd4-9baa10ae959e" name="Changes" comment="Add notification database" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -262,7 +255,7 @@
       <workItem from="1659931450563" duration="13158000" />
       <workItem from="1660044461820" duration="15057000" />
       <workItem from="1660115144896" duration="12215000" />
-      <workItem from="1664635296663" duration="4733000" />
+      <workItem from="1664635296663" duration="5053000" />
     </task>
     <task id="LOCAL-00001" summary="Role and permission">
       <created>1659957507234</created>
@@ -383,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664669693220</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add notification database">
+      <created>1664672318256</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1664672318256</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,6 +418,7 @@
     <MESSAGE value="Add spatie media library" />
     <MESSAGE value="Add tags" />
     <MESSAGE value="Add health check" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add health check" />
+    <MESSAGE value="Add notification database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add notification database" />
   </component>
 </project>
