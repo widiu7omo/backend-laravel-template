@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3528938d-2e73-48b9-abd4-9baa10ae959e" name="Changes" comment="Add notification database">
-      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
+    <list default="true" id="3528938d-2e73-48b9-abd4-9baa10ae959e" name="Changes" comment="Upgrade to latest dependencies">
+      <change beforePath="$PROJECT_DIR$/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +265,7 @@
       <workItem from="1660044461820" duration="15057000" />
       <workItem from="1660115144896" duration="12215000" />
       <workItem from="1664635296663" duration="5053000" />
-      <workItem from="1667548545643" duration="316000" />
+      <workItem from="1667548545643" duration="1026000" />
     </task>
     <task id="LOCAL-00001" summary="Role and permission">
       <created>1659957507234</created>
@@ -393,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664672318256</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Upgrade to latest dependencies">
+      <created>1667549252288</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667549252288</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,6 +436,7 @@
     <MESSAGE value="Add tags" />
     <MESSAGE value="Add health check" />
     <MESSAGE value="Add notification database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add notification database" />
+    <MESSAGE value="Upgrade to latest dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade to latest dependencies" />
   </component>
 </project>
