@@ -58,7 +58,7 @@ class ManageNotification extends SettingsPage
                 )->columns(3)]),
             Fieldset::make("Test Notification")->schema([
                 FormTestNotification::make()->columnSpan(12)
-            ])->columns(3)->withAttributes(['class' => 'bg-white mb-4 mt-4 pt-8']),
+            ])->columns(3)->extraAttributes(['class' => 'bg-white mb-4 mt-4 pt-8']),
         ];
     }
 }
