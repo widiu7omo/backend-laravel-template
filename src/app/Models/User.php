@@ -15,6 +15,7 @@ use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Spatie\Permission\Traits\HasRoles;
+
 //use Spatie\Tags\HasTags;
 
 /**
@@ -26,6 +27,7 @@ class User extends Authenticatable implements FilamentUser, BannableContract, Ha
     use HasRoles;
     use Bannable;
     use InteractsWithMedia;
+
 //    use HasTags;
 
     /**
@@ -60,7 +62,7 @@ class User extends Authenticatable implements FilamentUser, BannableContract, Ha
 
     public function canAccessFilament(): bool
     {
-        return str_ends_with($this->email, 'admin@adm.com') && $this->hasVerifiedEmail();
+        return auth()->user()->hasRole(['admin', 'customer', 'super_admin']);
     }
 
     public function registerMediaConversions(Media $media = null): void

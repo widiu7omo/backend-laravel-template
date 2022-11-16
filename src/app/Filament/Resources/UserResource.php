@@ -13,6 +13,7 @@ use FilamentPro\FilamentBan\Actions\Ban;
 use FilamentPro\FilamentBan\Actions\Unban;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use STS\FilamentImpersonate\Impersonate;
 
 class UserResource extends Resource
 {
@@ -75,6 +76,7 @@ class UserResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Impersonate::make()
                 //TODO: add banable into each row
             ])
             ->bulkActions([

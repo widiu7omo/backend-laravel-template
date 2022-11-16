@@ -70,3 +70,7 @@ php artisan make:livewire folder_location/component_name
   # Build server
   docker build -f ./docker/files/webServer.Dockerfile -t widiu7omo/laravel-backend-template-server .
 ```
+
+## Impersonate User
+``` composer require stechstudio/filament-impersonate```
+

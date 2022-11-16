@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3528938d-2e73-48b9-abd4-9baa10ae959e" name="Changes" comment="Add notification database" />
+    <list default="true" id="3528938d-2e73-48b9-abd4-9baa10ae959e" name="Changes" comment="Health check toggle to .env">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4c8d56b5-c134-40e6-804e-e0ed1712cf7c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4c8d56b5-c134-40e6-804e-e0ed1712cf7c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-template.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Filament/Pages/ManageGeneral.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Filament/Pages/ManageGeneral.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Filament/Pages/ManageNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Filament/Pages/ManageNotification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Filament/Resources/UserResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Filament/Resources/UserResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/filament-spatie-laravel-backup.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/filament-spatie-laravel-backup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/filament-spatie-laravel-health.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/filament-spatie-laravel-health.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,11 +224,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.14.2",
-    "javascript.nodejs.core.library.typings.version": "16.11.47",
+    "javascript.nodejs.core.library.configured.version": "18.12.0",
+    "javascript.nodejs.core.library.typings.version": "18.11.9",
     "last_opened_file_path": "/Volumes/Data/playground/laravel/laravel-template",
     "nodejs_package_manager_path": "npm",
     "php.override.implement.member.chooser.php.doc": "NONE",
@@ -255,7 +273,8 @@
       <workItem from="1659931450563" duration="13158000" />
       <workItem from="1660044461820" duration="15057000" />
       <workItem from="1660115144896" duration="12215000" />
-      <workItem from="1664635296663" duration="5053000" />
+      <workItem from="1664635296663" duration="5667000" />
+      <workItem from="1668577613792" duration="2320000" />
     </task>
     <task id="LOCAL-00001" summary="Role and permission">
       <created>1659957507234</created>
@@ -383,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664672318256</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Health check toggle to .env">
+      <created>1664672734968</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1664672734968</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,6 +445,7 @@
     <MESSAGE value="Add tags" />
     <MESSAGE value="Add health check" />
     <MESSAGE value="Add notification database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add notification database" />
+    <MESSAGE value="Health check toggle to .env" />
+    <option name="LAST_COMMIT_MESSAGE" value="Health check toggle to .env" />
   </component>
 </project>

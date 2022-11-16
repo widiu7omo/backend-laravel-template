@@ -4,6 +4,7 @@ namespace App\Filament\Pages;
 
 use App\Forms\Components\FormTestNotification;
 use App\Settings\NotificationSettings;
+use BezhanSalleh\FilamentShield\Traits\HasPageShield;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\Textarea;
@@ -17,6 +18,7 @@ class ManageNotification extends SettingsPage
     protected static ?string $navigationGroup = 'Settings';
     protected static ?string $navigationLabel = "Notification";
     protected static string $settings = NotificationSettings::class;
+    use HasPageShield;
 
     protected function getFormSchema(): array
     {
